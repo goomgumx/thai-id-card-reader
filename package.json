@@ -3,9 +3,12 @@
     "@types/node": "^18.11.9"
   },
   "name": "thai-id-card-reader",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "main": "build/src/ThaiIDCardReader.js",
   "types": "build/src/ThaiIDCardReader.d.ts",
+  "publishConfig": {
+    "registry": "https://github.com/goomgumx/thai-id-card-reader.git"
+  },
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
