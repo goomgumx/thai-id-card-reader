@@ -5,6 +5,10 @@ This package is used to read personal information from thai national id cards.
 - tested on macOS Monterey v.12.5.1
 - tested on windows 11 v.21H2
 - maybe work on linux. didn't test
+
+
+![Alt Text](https://github.com/goomgumx/thai-id-card-reader/blob/main/demo.gif?raw=true)
+
 ### Install
 ```
 npm i thai-id-card-reader
