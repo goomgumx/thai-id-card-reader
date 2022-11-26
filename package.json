@@ -3,7 +3,7 @@
     "@types/node": "^18.11.9"
   },
   "name": "thai-id-card-reader",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "main": "build/src/ThaiIDCardReader.js",
   "types": "build/src/ThaiIDCardReader.d.ts",
   "publishConfig": {
