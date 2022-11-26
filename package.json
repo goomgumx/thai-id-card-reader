@@ -2,23 +2,30 @@
   "devDependencies": {
     "@types/node": "^18.11.9"
   },
-  "name": "card-reader",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "thai-id-card-reader",
+  "version": "1.0.47",
+  "main": "build/src/ThaiIDCardReader.js",
+  "types": "build/src/ThaiIDCardReader.d.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "thai smart card reader",
+    "smart card",
+    "thai national id card"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@privageapp/thai-national-id-reader": "^1.0.4",
     "axios": "^1.1.3",
     "datauri": "^4.1.0",
     "encoding": "^0.1.13",
     "eventemitter3": "^4.0.7",
     "legacy-encoding": "^3.0.0",
-    "pcsclite": "^1.0.1"
+    "moment": "^2.29.4",
+    "pcsclite": "^1.0.1",
+    "thai-id-card-reader": "^1.0.42"
   },
   "description": ""
 }

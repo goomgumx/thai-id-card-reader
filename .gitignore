@@ -1,2 +1,3 @@
-.config.json
-./src/sendToServer.ts
+config.json
+src/sendToServer.ts
+node_modules
