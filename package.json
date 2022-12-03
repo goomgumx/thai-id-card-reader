@@ -1,17 +1,14 @@
 {
-  "devDependencies": {
-    "@types/node": "^18.11.9"
-  },
   "name": "thai-id-card-reader",
-  "version": "1.0.50",
-  "main": "build/src/ThaiIDCardReader.js",
-  "types": "build/src/ThaiIDCardReader.d.ts",
+  "version": "1.1.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "publishConfig": {
     "registry": "https://github.com/goomgumx/thai-id-card-reader.git"
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --build",
+    "start": "node ."
   },
   "keywords": [
     "thai smart card reader",
@@ -30,5 +27,9 @@
     "pcsclite": "^1.0.1",
     "thai-id-card-reader": "^1.0.42"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1"
+  }
 }
