@@ -1,4 +1,4 @@
-export interface SmartCardReturnData {
+export type SmartCardReturnData = {
   citizenID: string
   titleTH: string
   titleEN: string

@@ -1,16 +1,25 @@
 {
   "devDependencies": {
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   },
   "name": "thai-id-card-reader",
-  "version": "1.0.50",
-  "main": "build/src/ThaiIDCardReader.js",
-  "types": "build/src/ThaiIDCardReader.d.ts",
-  "publishConfig": {
-    "registry": "https://github.com/goomgumx/thai-id-card-reader.git"
+  "version": "1.0.54",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "engines": {
+    "node": "20.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goomgumx/thai-id-card-reader.git"
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "build": "npm run check:node && npm version patch --no-git-tag-version && tsc -p tsconfig.json",
+    "check:node": "node scripts/check-node-version.js",
+    "prestart": "npm run check:node",
+    "start": "ts-node src/demo.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -1,17 +1,5 @@
-interface cardData {
-    citizenId: string;
-    titleTH: string;
-    firstNameTH: string;
-    lastNameTH: string;
-    titleEN: string;
-    firstNameEN: string;
-    lastNameEN: string;
-    birthday: string;
-    gender: string;
-    address: string;
-    issue: string;
-    expire: string;
-    photo: string;
-}
-export default function sendToServer(data: cardData): null | undefined;
+import type { SmartCardReturnData } from "./SmartCardReturnData";
+export type CardDataPayload = Partial<SmartCardReturnData>;
+type ServerSuccessResponse = unknown;
+export default function sendToServer(data: CardDataPayload): Promise<ServerSuccessResponse>;
 export {};
